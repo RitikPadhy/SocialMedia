@@ -1,0 +1,77 @@
+-We are building a twitter web3 app with nextJS. We will
+be allowed to use a NFT to make our profile image. nextJS
+takes care of the front-end, as TailwindCSS takes care of
+the backend. Our smart contracts will be written in 
+solidity, and with the help of OpenZepplin we can see our
+smart contract follows the ERC-721 NON-FUNGIBLE TOKEN 
+StANDARD. Pinata is our interplanatary file system to 
+store your jpegs onto the blockchain. Hardhat is used to 
+compile and deploy your smart contract. Context API is 
+used to manage the state inside of React. Alchemy API is
+used as your rpc url with rinkeby test network.
+Authentication is added with the help of metamask. 
+Sanity.io is used as the backend to store all of the 
+tweets and the associated users with those tweets. We 
+also verify the smart contract on ether scan and how 
+remix is used with the smart contract. grok and sanity 
+API is used to retrieve your data. We will learn how to 
+use the rinkeby test network which is on the ethereum 
+blockchain. Then, deploy the app using Vercel and finally
+see your web 3.9 NFT app on the Internet.
+-Lets demo the app. Connect your wallet and you can logout
+of it whenever possible. In sanity database, profile image
+can be changed whenever possible. You will be allowed to 
+tweet as well as mint a NFT which means a unique token/NFT
+is created on the blockchain. The tweet can be seen in 
+sanity.io as well as pinata which is your ipfs stores the
+image. The name which was used in minting when tweeted is
+seen to be connected to its author, meaning its working.
+-Front-end -> Smart contract(Using solidity and deploy it
+to the blockchain) -> Backend(Sanity). Make a next app for 
+your frontend/client, then npm install -g @sanity/cli to
+get sanity in your project. Setup your studio by writing 
+sanity init --coupon cleverprogrammer. 
+-Lets start the front end by working on the sidebar 
+component by making the Sidebar and SidebarOption. Once 
+done we move on to the feed component by creating the feed, 
+tweetbox and post. Then, we create the widgets component by
+making the Widgets file. Then we need to work on the profile
+page by getting the same components, but formatting the 
+Feed with the profile which consists of The ProfileHeader and
+ProfileTweets.
+-Now, we work on the smart contract. Initially, we make our 
+account using metamask. And then we work on the smart contract
+and and deploy it on using deploy.ts. When _ is mentioned 
+before the variable, we cannot use that variable outside the 
+function. Remember, minting a NFT basically means creating a 
+new unique token. At the end, you will receive the address of
+your smart contract. Export ABI and the contract into your
+client/front-end.
+-We work on adding Authentication with metamask to our 
+application. We make context which is a global thing which 
+keeps a track of the Authentication throughout the porject so 
+that if you are not Authenticate you will be kicked out. window
+is a global variable on every search engine which tells us about
+whether or not some thing is connected to the search engine or 
+not.
+-Now, we setup the sanity database by modifying the index.js, 
+adding userSchema and tweetSchema into the schema. tweetSchema
+deals with the all the tweets made with the user. userSchema is 
+going with the details related to the user. We will create an
+account in Sanity if the user does not have by using the 
+createUserAccount in TwitterContext.js which gets configured by
+the sanity client which gets called client.js. After modifying
+your files, run it on studio by writing sanity start. You 
+should see users and tweets of your app, and our front-end is 
+able to speak to our backend. Then, we will work on saving the
+tweets to our Sanity database in a way showing each user with its
+dedicated user. Lets add dynamic data thorughout our app 
+basically instead of using our own customized tweets we will use
+the tweets which we write into the website.
+-Now, lets work on the blockchain side of the project. We will be
+creating your image and minting your own NFT with our own 
+deployed contract.  We will work on the minting part of the 
+project by creating ProfileImageMinter, InitialState, 
+FinishedState and LoadingState. 
+
+
