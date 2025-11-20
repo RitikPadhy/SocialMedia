@@ -55,7 +55,3 @@ We use **Sanity.io** as the backend database for storing tweets and users, while
 - Tweets appear in Sanity Studio.
 - NFT images appear in Pinata (IPFS dashboard).
 
----
-
-## 🧱 Architecture Flow
-
